@@ -32,9 +32,9 @@ body{
 .titulo {
     display: grid;
     place-items: center; 
-    color: #aec552;
+    color: #799496;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 45px;
     font-family: 'Times New Roman';
     font-weight: bold;
 }
@@ -45,8 +45,7 @@ body{
 .card-img-overlay {
     text-align: center;
     font-size: 45px;
-    text-transform: capitalize;
-    color: rgb(66, 17, 17);
+    color: #637fb4;
     font-weight: bold;
 }
 .call{
@@ -134,7 +133,7 @@ footer p{
 }
 .redes a{
     text-decoration: none;
-    color: violet;
+    color: #799496;
     font-size: 50px;
     letter-spacing: 15px;
 }
