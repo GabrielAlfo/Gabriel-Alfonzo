@@ -12,6 +12,9 @@ body{
     width: 640px; 
     padding: 50px;
 }
+.nav-item{
+    font-size: 25px;
+}
 .navbar-brand{
     padding: 10;
     font-size: 20px;
@@ -33,6 +36,17 @@ body{
     margin-bottom: 20px;
     font-size: 30px;
     font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.card-img-overlay h4{
+    text-align: center;
+    font-size: 60px;
+}
+.card-img-overlay {
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    color: rgb(66, 17, 17);
     font-weight: bold;
 }
 .call{
@@ -81,10 +95,12 @@ iframe{
     font-size: 20px;
     display: grid;
     place-items: center;
+    
     }
 .contacto img{
     width: 25%;
     padding: 20px;
+    border-radius: 5%;
 }
 .carousel slide{
     width: 100%;
