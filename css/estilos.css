@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(224, 210, 210);
+    
+}
+.marca{
+    margin: auto;
+    width: 640px; 
+    padding: 50px;
+}
+.navbar-brand{
+    padding: 10;
+    font-size: 20px;
+    font-family: Verdana;
+}
+.navbar-brand img{
+    border-radius: 50%;
+}
+.marca{
+    margin-top: 20px;
+    float: none;
+    width: 1200px;
+    height: 500px;
+}
+.titulo {
+    display: grid;
+    place-items: center; 
+    color: #aec552;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.call{
+    color: #fff;
+    width:60%;
+    border: none;
+    float: right;
+    margin: 30px;
+    padding: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+h1{
+    color: blue;
+    margin-bottom: 20px;
+}
+.call p{
+    margin-bottom: 20px;
+}
+.call a{
+    color: #fff;
+    background-color: lightskyblue;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.call a:hover{
+    background-color: #333;
+}
+iframe{
+    border-radius: 5%;
+}
+.direccion1 {
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    }
+.direccion2 {
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+.queHacemos{
+    font-size: 50px;
+    padding: 20px;  
+}
+.contacto{
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    }
+.contacto img{
+    width: 25%;
+    padding: 20px;
+}
+.carousel slide{
+    width: 100%;
+    height: 30%;
+}
+.carousel-indicators button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+
+h3{
+    color: #548174;
+    border-color: #111;
+    text-decoration: solid;
+    background-color: #111;
+    border-radius: 80%;    
+}
+
+footer{
+    background-color: #111;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+.redes a{
+    text-decoration: none;
+    color: violet;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+.subir{
+    background-color: greenyellow;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right:40px;
+    bottom:40px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 40%;
+    box-shadow: 0 0 10px 5px #548174;
+}
