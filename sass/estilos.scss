@@ -1,60 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+//font-family: "Roboto", sans-serif;
+// font-family: "Playfair Display", serif;
+
+//variables
+$colorfondo: rgb(224, 210, 210);
+$centrado: center;
+$blanco: #fff;
+$color1: #03a2fd;
+$font: 10px;
+$myfont: verdana;
+$myfont1: "times new roman";
+$myfont2: "roboto";
+$myfont3: "playfair display";
+$var1: 100%;
+$var2: 50%;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: rgb(224, 210, 210);
+  background-color: $colorfondo;
 }
-
 .marca {
   margin: auto;
   width: 640px;
   padding: 50px;
 }
-
 .nav-item {
-  font-size: 30px;
+  font-size: $font * 3;
 }
-
 .navbar-brand {
   padding: 10;
   font-size: 20px;
-  font-family: verdana;
+  font-family: $myfont;
 }
-
 .navbar-brand img {
   border-radius: 50%;
 }
-
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
 .marca {
-  width: 1200px;
-  height: 500px;
+  @include sizes(1200px, 500px);
   margin-top: 20px;
   float: none;
 }
-
 .titulo {
   background-color: #111;
-  width: 100%;
+  width: $var1;
   display: grid;
   place-items: center;
-  color: #03a2fd;
+  color: $color1;
   margin-bottom: 20px;
-  font-size: 40px;
-  font-family: "playfair display";
+  font-size: $font * 4;
+  font-family: $myfont3;
   font-weight: bold;
   text-shadow: 5px 5px 10px #333;
 }
-
 .card-img-overlay h4 {
-  text-align: center;
+  text-align: $centrado;
   font-size: large;
 }
-
 .card-img-overlay {
   text-align: center;
   font-size: large;
@@ -63,48 +74,42 @@ body {
 }
 
 .call {
-  color: #fff;
-  width: 60%;
+  color: $blanco;
+  width: $var1 - 40;
   border: none;
   float: right;
   margin: 30px;
   padding: 100px;
   background-color: rgba(0, 0, 0, 0.7);
+  p {
+    margin-bottom: 20px;
+  }
 }
-.call p {
-  margin-bottom: 20px;
-}
-
 h1 {
   color: blue;
   margin-bottom: 20px;
 }
 
 .call a {
-  color: #fff;
+  color: $blanco;
   background-color: lightskyblue;
   text-decoration: none;
   padding: 10px 30px;
 }
-
 .call a:hover {
   background-color: #333;
 }
-
 iframe {
   border-radius: 5%;
 }
-
 .container {
   display: grid;
 }
-
 .direccion1 {
   padding: 10px;
   display: grid;
   place-items: center;
 }
-
 .direccion2 {
   padding: 10px;
   display: grid;
@@ -112,26 +117,24 @@ iframe {
 }
 
 .queHacemos {
-  font-size: 50px;
+  font-size: $font * 5;
   padding: 20px;
 }
 
 .contacto {
-  font-size: 20px;
+  font-size: $font * 2;
   display: grid;
   place-items: center;
+  img {
+    width: 25%;
+    padding: 20px;
+    border-radius: 5%;
+  }
 }
-.contacto img {
-  width: 25%;
-  padding: 20px;
-  border-radius: 5%;
-}
-
 .carousel slide {
   width: 100%;
   height: 30%;
 }
-
 .carousel-indicators button {
   height: 20px;
   width: 20px;
@@ -146,39 +149,5 @@ h3 {
   background-color: #111;
   border-radius: 80%;
 }
-
-.subir {
-  background-color: greenyellow;
-  color: #fff;
-  height: 40px;
-  width: 40px;
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  font-size: 25px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 40%;
-  box-shadow: 0 0 10px 5px #548174;
-}
-
-footer {
-  background-color: #111;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 25px;
-}
-footer p {
-  margin-bottom: 20px;
-}
-
-.redes a {
-  text-decoration: none;
-  color: #799496;
-  font-size: 50px;
-  letter-spacing: 15px;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+@import "_sider.scss";
+@import "_footer.scss";
